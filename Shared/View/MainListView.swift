@@ -16,7 +16,12 @@ struct MainListView: View {
         NavigationView {
             List(store.list) { memo in
                 // 우클릭 extracted subview로 view를 분리해 가독성 높임
-                MemoCell(memo: memo)
+                NavigationLink {
+                    DetailView(memo: memo)
+                } label: {
+                    MemoCell(memo: memo)
+                }
+                
             }
             .listStyle(.plain)
             .navigationTitle("내 메모")

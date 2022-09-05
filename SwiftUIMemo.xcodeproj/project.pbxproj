@@ -11,23 +11,23 @@
 		FF14E6EE28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DA28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld */; };
 		FF14E6EF28C4E4FB0055EBFB /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DC28C4E4FB0055EBFB /* SwiftUIMemoApp.swift */; };
 		FF14E6F028C4E4FB0055EBFB /* SwiftUIMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DC28C4E4FB0055EBFB /* SwiftUIMemoApp.swift */; };
-		FF14E6F128C4E4FB0055EBFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DD28C4E4FB0055EBFB /* ContentView.swift */; };
-		FF14E6F228C4E4FB0055EBFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DD28C4E4FB0055EBFB /* ContentView.swift */; };
 		FF14E6F328C4E4FB0055EBFB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DE28C4E4FB0055EBFB /* Persistence.swift */; };
 		FF14E6F428C4E4FB0055EBFB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14E6DE28C4E4FB0055EBFB /* Persistence.swift */; };
 		FF14E6F528C4E4FB0055EBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF14E6DF28C4E4FB0055EBFB /* Assets.xcassets */; };
 		FF14E6F628C4E4FB0055EBFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF14E6DF28C4E4FB0055EBFB /* Assets.xcassets */; };
+		FF1E8D8528C5F251003CD7E7 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1E8D8428C5F251003CD7E7 /* MainListView.swift */; };
+		FF1E8D8628C5F251003CD7E7 /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF1E8D8428C5F251003CD7E7 /* MainListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF14E6DB28C4E4FB0055EBFB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		FF14E6DC28C4E4FB0055EBFB /* SwiftUIMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMemoApp.swift; sourceTree = "<group>"; };
-		FF14E6DD28C4E4FB0055EBFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF14E6DE28C4E4FB0055EBFB /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FF14E6DF28C4E4FB0055EBFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF14E6E428C4E4FB0055EBFB /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF14E6EA28C4E4FB0055EBFB /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF14E6EC28C4E4FB0055EBFB /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		FF1E8D8428C5F251003CD7E7 /* MainListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,11 +60,11 @@
 		FF14E6D928C4E4FB0055EBFB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FF1E8D8828C5F27A003CD7E7 /* Memory */,
+				FF1E8D8728C5F26F003CD7E7 /* CoreData */,
 				FF14E6DC28C4E4FB0055EBFB /* SwiftUIMemoApp.swift */,
-				FF14E6DD28C4E4FB0055EBFB /* ContentView.swift */,
-				FF14E6DE28C4E4FB0055EBFB /* Persistence.swift */,
+				FF1E8D8428C5F251003CD7E7 /* MainListView.swift */,
 				FF14E6DF28C4E4FB0055EBFB /* Assets.xcassets */,
-				FF14E6DA28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -84,6 +84,22 @@
 				FF14E6EC28C4E4FB0055EBFB /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		FF1E8D8728C5F26F003CD7E7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FF14E6DE28C4E4FB0055EBFB /* Persistence.swift */,
+				FF14E6DA28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		FF1E8D8828C5F27A003CD7E7 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Memory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF14E6ED28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld in Sources */,
+				FF1E8D8528C5F251003CD7E7 /* MainListView.swift in Sources */,
 				FF14E6F328C4E4FB0055EBFB /* Persistence.swift in Sources */,
 				FF14E6EF28C4E4FB0055EBFB /* SwiftUIMemoApp.swift in Sources */,
-				FF14E6F128C4E4FB0055EBFB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF14E6EE28C4E4FB0055EBFB /* SwiftUIMemo.xcdatamodeld in Sources */,
+				FF1E8D8628C5F251003CD7E7 /* MainListView.swift in Sources */,
 				FF14E6F428C4E4FB0055EBFB /* Persistence.swift in Sources */,
 				FF14E6F028C4E4FB0055EBFB /* SwiftUIMemoApp.swift in Sources */,
-				FF14E6F228C4E4FB0055EBFB /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
